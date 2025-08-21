@@ -1,0 +1,345 @@
+@import "header.css";
+@import "navbar.css";
+@import "hero.css";
+@import "utility-classes.css";
+@import "summary.css";
+@import "learn.css";
+@import "chapter.css";
+@import "info.css";
+@import "details.css";
+@import "key-takeaways.css";
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --primary-color: #fc5d66;
+  --secondary-color: #ffc05a;
+  --light-color: #f9fafb;
+  --dark-color: #272d35;
+}
+
+html,
+body {
+  font-family: "Open Sans", sans-serif;
+  line-height: 1.6;
+  scroll-behavior: smooth;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+/* Text Classes */
+.text-primary {
+  color: var(--primary-color);
+}
+
+.text-secondary {
+  color: var(--secondary-color);
+}
+
+.section {
+  margin: 4rem 0;
+}
+
+/* Card */
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 2rem 1.75rem;
+  background: #fff;
+  box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.3);
+}
+
+/*Author Information Section*/
+.author-details .container {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+  align-items: center;
+  gap: 4rem;
+  padding-top: 6rem;
+  line-height: 1.6;
+}
+.author-image {
+  max-width: 500px;
+  height: 100%;
+}
+
+.authors {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+  h2 {
+    font-size: 2rem;
+  }
+  .heading-border {
+    margin: 0;
+  }
+}
+
+.author-button {
+  border: none;
+  padding: 1.6rem;
+  border-radius: 48px;
+  font-size: 1rem;
+  margin-top: 15px;
+  width: 160px;
+  background-color: #ffc05a;
+  font-weight: 100;
+  transition: 0.5s all ease;
+}
+.author-button:hover {
+  background-color: #fc5d66;
+  color: white;
+  cursor: pointer;
+}
+
+.author-info {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+  padding-top: 1.5rem;
+}
+
+.author-info i {
+  padding-right: 10px;
+}
+
+/*Get The Course Section*/
+
+.get-the-course {
+  padding-top: 2rem;
+  background: url("../images/stats-background.jpg");
+  margin-top: 4rem;
+}
+.course-info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem 0;
+  gap: 8rem;
+}
+
+.stats-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    text-align: center;
+    color: white;
+  }
+}
+
+.stats-image {
+  width: 500px;
+}
+
+.card-style {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 30px;
+
+  p {
+    color: white;
+    font-size: 0.8rem;
+    text-align: center;
+  }
+}
+
+.get-course {
+  border: none;
+  padding: 1.6rem;
+  border-radius: 48px;
+  font-size: 1rem;
+  margin-top: 15px;
+  width: 200px;
+  background-color: #ffc05a;
+  font-weight: 100;
+  transition: 0.5s all ease;
+}
+.get-course:hover {
+  background-color: #fc5d66;
+  border: 1px solid white;
+  color: white;
+  cursor: pointer;
+}
+
+/*Subscribe Section*/
+.newsletter-section {
+  text-align: center;
+  margin: 4rem 2rem;
+  h2 {
+    font-size: 2rem;
+    font-weight: 700;
+  }
+  p {
+    max-width: 600px;
+  }
+}
+
+.newsletter-flex {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  background: var(--light-color);
+  border-width: 1px;
+  border-style: solid;
+  border-color: rgb(238, 238, 238);
+  border-image: initial;
+  padding: 4rem 2rem;
+}
+
+#email {
+  width: 100%;
+  max-width: 400px;
+  padding: 1rem 2rem;
+  border-width: 1px;
+  border-style: solid;
+  border-color: rgb(204, 204, 204);
+  border-image: initial;
+  border-radius: 32px;
+  margin: 1rem 0px;
+}
+
+/* Social Section */
+.social p {
+  margin-bottom: 2rem;
+}
+
+.social {
+  color: rgb(255, 255, 255);
+  text-align: center;
+  font-size: 1.7rem;
+  margin-bottom: 0px;
+  background: var(--dark-color);
+  padding: 6rem 2rem;
+}
+
+.social .social-icons {
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+  gap: 1rem;
+}
+
+.social a,
+.footer a {
+  color: rgb(255, 255, 255);
+}
+
+/* Footer Section */
+
+.footer {
+  color: rgb(255, 255, 255);
+  background: var(--dark-color);
+  border-top: 1px solid rgb(56, 70, 83);
+  padding: 0.5rem 2rem;
+}
+
+.footer-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer ul {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin: 2rem 0px;
+}
+
+/* Inner Header */
+.inner-header {
+  background: var(--primary-color);
+  color: #fff;
+  height: 250px;
+  padding-top: 8rem;
+}
+
+.inner-header h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+/* Contact Form */
+.contact-form p {
+  margin-bottom: 3rem;
+}
+
+.contact-form input,
+.contact-form textarea {
+  display: block;
+  font-family: inherit;
+  font-size: medium;
+  width: 100%;
+  margin: 1.5rem 0;
+  border: 1px solid #ccc;
+  padding: 1.2rem 1rem;
+}
+
+.contact-form textarea {
+  height: 200px;
+}
+
+.contact-form .btn {
+  display: block;
+  width: 100%;
+  font-size: inherit;
+  font-family: inherit;
+  margin: 0 auto;
+}
+
+/* Location */
+.location h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.location p {
+  margin-bottom: 2rem;
+}
+
+.location .map {
+  overflow: hidden;
+  position: relative;
+  height: 0;
+  margin-bottom: 3rem;
+  padding-bottom: 50%;
+  border-radius: 0.25rem;
+}
+
+.location .map iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+}

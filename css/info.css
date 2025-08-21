@@ -1,0 +1,44 @@
+/* Info Section*/
+.info {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.info-right {
+  background-color: var(--primary-color);
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 4rem 4rem;
+  color: white;
+  h3 {
+    font-size: 2rem;
+  }
+  p {
+    font-size: 1.2rem;
+  }
+}
+
+.info-list {
+  li {
+    font-size: 1.2rem;
+    line-height: 2;
+  }
+
+  i {
+    color: var(--secondary-color);
+    padding-right: 10px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .info {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+
+  .info-right {
+    grid-column: 1/2;
+    grid-row: 1/2;
+  }
+}

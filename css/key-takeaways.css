@@ -1,0 +1,19 @@
+/* Key Takeaways*/
+.key-takeaways {
+  padding-top: 2rem;
+}
+.key-takeaways_cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 2rem;
+}
+
+.card-keys {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.2rem;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 4px 12px 0px;
+  padding: 2rem 1.75rem;
+  background: rgb(255, 255, 255);
+}

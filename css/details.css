@@ -1,0 +1,41 @@
+/* Course Details Section*/
+.course-details .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 4rem;
+  padding-top: 6rem;
+}
+.details-image {
+  max-width: 500px;
+  height: 100%;
+}
+
+.details {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+  h2 {
+    font-size: 2rem;
+  }
+  .heading-border {
+    margin: 0;
+  }
+}
+
+.details-button {
+  border: none;
+  padding: 1.6rem;
+  border-radius: 48px;
+  font-size: 1rem;
+  margin-top: 15px;
+  width: 160px;
+  background-color: #ffc05a;
+  font-weight: 100;
+  transition: 0.5s all ease;
+}
+.details-button:hover {
+  background-color: #fc5d66;
+  color: white;
+  cursor: pointer;
+}
